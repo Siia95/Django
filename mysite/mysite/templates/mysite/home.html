@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Ласкаво просимо, {% if user.is_authenticated %}{{ user.username }}{% else %}Guest{% endif %}</h1>
+    <!-- Додайте інші елементи сторінки тут -->
+
+    <a href="/accounts/signup">реєстрація</a>
+    <a href="/accounts/login">вхід</a>
+    <a href="/accounts/logout">вихід</a>
+    <a href="/authors/create_author">додати автора</a>
+    <a href="/authors/author_list">список авторів</a>
+    <a href="/quotes/add_quote">додати цитату</a>
+    <a href="{% url 'quotes:quote_list' %}">Список цитат</a>
+
+</body>
+</html>
+

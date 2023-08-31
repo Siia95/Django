@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Author Detail</title>
+</head>
+<body>
+    <h1>{{ author.name }}</h1>
+    <p>Дата народження: {{ author.birth_date }}</p>
+    <p>Дані про автора: {{ author.bio }}</p>
+    <a href="{% url 'home' %}">Повернутися на головну сторінку</a>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>список цитат</title>
+</head>
+<body>
+    <h1>список цитат</h1>
+
+    <ul>
+        {% for quote in quotes %}
+            <li>
+                <strong>{{ quote.text }}</strong> - {{ quote.author.name }}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'home' %}">Повернутися на головну сторінку</a>
+</body>
+</html>

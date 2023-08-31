@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Додати автора</title>
+</head>
+<body>
+    <h1>Додати автора</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Додати</button>
+    </form>
+    <a href="{% url 'home' %}">Повернутися на головну сторінку</a>
+</body>
+</html>
+

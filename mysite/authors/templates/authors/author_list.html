@@ -1,0 +1,15 @@
+<h2>Author List</h2>
+<ul>
+  {% for author in authors %}
+    <li>
+      <a href="{% url 'authors:author_detail' author.id %}">{{ author.name }}</a>
+      <a href="{% url 'authors:author_delete' author.id %}">Delete</a>
+    </li>
+  {% endfor %}
+</ul>
+<a href="{% url 'home' %}">Повернутися на головну сторінку</a>
+
+
+
+
+
